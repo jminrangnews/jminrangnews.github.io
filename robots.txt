@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jminrangnews.github.io/sitemap.xml
