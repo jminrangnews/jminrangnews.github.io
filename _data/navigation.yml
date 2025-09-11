@@ -1,0 +1,29 @@
+# _data/navigation.yml
+
+- title: "Home"
+  url: "/"
+
+- title: "Categories"
+  url: "/categories/"
+  items:
+    - title: "소프트웨어"
+      url: "/categories/software/"
+      items:
+        - title: "데이터"
+          url: "/categories/software/data/"
+    - title: "그냥 기록"
+      url: "/categories/life/"
+      items:
+        - title: "경기도 지역 맛집"
+          url: "/categories/life/gyeonggi/"
+        - title: "서울 지역 맛집"
+          url: "/categories/life/seoul/"
+
+- title: "Tags"
+  url: "/tags/"
+
+- title: "Archives"
+  url: "/archives/"
+
+- title: "About"
+  url: "/about/"
