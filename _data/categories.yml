@@ -1,0 +1,20 @@
+software:
+  name: "소프트웨어"
+  description: "소프트웨어 관련 글"
+  icon: "code"
+  children:
+    data:
+      name: "데이터"
+      description: "데이터 관련 글"
+      icon: "database"
+life:
+  name: "그냥 기록"
+  description: "나의 생활 잠깐의 기록"
+  icon: "utensils"
+  children:
+    gyeonggi:
+      name: "경기도 지역 맛집"
+      description: "경기도 지역 맛집"
+    seoul:
+      name: "서울 지역 맛집"
+      description: "서울 지역 맛집"
