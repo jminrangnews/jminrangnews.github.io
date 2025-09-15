@@ -37,6 +37,10 @@ layout: compress
             <div class="access">
               {% include_cached update-list.html lang=lang %}
               {% include_cached trending-tags.html lang=lang %}
+              {%- assign page_url = page.url | downcase -%}
+              {%- if page_url contains '/tabs/archives' or page_url contains '/tabs/categories' or page_url contains '/tabs/tags' -%}
+                <!-- Ads disabled on archive/category/tag pages. -->
+              {%- else -%}
               <!-- Adsense placeholder -->
               <div id="panel-ad" class="card-body">
                 <h3 class="pt-0">ADVERTISEMENT</h3>
@@ -44,6 +48,7 @@ layout: compress
                   Adsense Unit
                 </div>
               </div>
+              {%- endif -%}
             </div>
 
             {% for _include in layout.panel_includes %}
