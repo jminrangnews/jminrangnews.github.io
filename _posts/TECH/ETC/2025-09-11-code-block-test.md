@@ -2,7 +2,7 @@
 layout: post
 title: "포스트 내부 글 code 넣기 테스트"
 date: 2025-09-11 13:00:00 +0900
-categories: [software]
+categories: [TECH, ETC]
 tags: [code, test]
 ---
 
