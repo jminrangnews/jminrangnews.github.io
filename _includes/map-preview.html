@@ -1,0 +1,28 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all Naver Map links and prepare them for GLightbox
+  document.querySelectorAll('a[href*="map.naver.com"], a[href*="naver.me"]').forEach(function(link) {
+    link.classList.add('glightbox');
+    link.setAttribute('data-type', 'iframe');
+    link.setAttribute('data-width', '90vw');
+    link.setAttribute('data-height', '90vh');
+
+    // Create the "Open in New Tab" button HTML string
+    const newTabButtonHTML = '<div style="text-align: center; margin-top: 1rem;">' +
+                             '<a href="' + link.href + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">' +
+                             '새 탭에서 열기 <i class="fas fa-external-link-alt"></i>' +
+                             '</a>' +
+                             '</div>';
+
+    // Set the description for GLightbox
+    link.setAttribute('data-description', newTabButtonHTML);
+  });
+
+  // Initialize GLightbox
+  const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: false,
+    closeOnOutsideClick: true
+  });
+});
+</script>
