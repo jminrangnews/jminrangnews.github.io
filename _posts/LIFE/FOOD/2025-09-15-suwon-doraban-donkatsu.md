@@ -1,7 +1,7 @@
 ---
 title: "수원 권선동, 도래반돈까스"
 date: 2025-09-15
-categories: [LIFE, Food]
+categories: [LIFE, FOOD]
 tags: [돈까스, 가츠동, 수원, 권선동]
 ---
 
